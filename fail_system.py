@@ -11,7 +11,7 @@ def document_loader():
     try:
 
         if not os.path.exists(FILE_PATH):
-            logger.info("File not found")
+            logger.error("File not found")
             return
 
         loader = CSVLoader(file_path=FILE_PATH)
